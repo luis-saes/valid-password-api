@@ -2,9 +2,10 @@
   "name": "valid-password-api",
   "version": "1.0.0",
   "description": "API that receives a password (string) as a parameter and validates if it is a valid password by returning a boolean",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --ext .ts"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/luis-saes/valid-password-api/issues"
   },
-  "homepage": "https://github.com/luis-saes/valid-password-api#readme"
+  "homepage": "https://github.com/luis-saes/valid-password-api#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint": "^8.34.0"
+  }
 }
