@@ -1,34 +1,33 @@
 class ValidatePasswordService {
   private readonly MIN_LENGTH = 8;
+  private readonly DIGIT_REGEX = /\d/;
+  private readonly LOWERCASE_REGEX = /\d/;
+  private readonly UPPERCASE_REGEX = /[A-Z]/;
+  private readonly SPECIAL_CHARACTER_REGEX = /[!@#$%^&*()+-]/;
+  private readonly WHITESPACE_REGEX = /\s/;
 
   public isValidPassword(password: string): boolean {
-    // Length
     if (password.length < this.MIN_LENGTH) {
       return false;
     }
 
-    // Digit
-    if (!/\d/.test(password)) {
+    if (!this.DIGIT_REGEX.test(password)) {
       return false;
     }
 
-    // Lowercase
-    if (!/[a-z]/.test(password)) {
+    if (!this.LOWERCASE_REGEX.test(password)) {
       return false;
     }
 
-    // Uppercase
-    if (!/[A-Z]/.test(password)) {
+    if (!this.UPPERCASE_REGEX.test(password)) {
       return false;
     }
 
-    // Special character
-    if (!/[!@#$%^&*()+-]/.test(password)) {
+    if (!this.SPECIAL_CHARACTER_REGEX.test(password)) {
       return false;
     }
 
-    // Whitespace
-    if (/\s/.test(password)) {
+    if (this.WHITESPACE_REGEX.test(password)) {
       return false;
     }
 
