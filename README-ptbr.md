@@ -1,6 +1,6 @@
 # Valid Password API
 
-[English](README.md) | Português
+[English](./README.md) | Português
 
 API que recebe uma senha (string) como parâmetro e valida se é uma senha válida retornando um booleano.
 
