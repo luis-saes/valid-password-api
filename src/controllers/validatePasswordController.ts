@@ -2,7 +2,10 @@ import { Request, Response } from "express";
 import { ValidatePasswordService } from "../services/validatePasswordService";
 import { ValidatePasswordRequestBody, ValidatePasswordResponseBody } from "../types/validatePasswordRequest";
 
-function validatePassword(req: Request<ValidatePasswordRequestBody, ValidatePasswordResponseBody>, res: Response) {
+function validatePassword(
+  req: Request<ValidatePasswordRequestBody, ValidatePasswordResponseBody>,
+  res: Response
+): Response {
   const { password }: { password: string } = req.body;
 
   if (!password) {

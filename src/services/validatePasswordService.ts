@@ -1,10 +1,10 @@
 class ValidatePasswordService {
-  private readonly MIN_LENGTH = 8;
-  private readonly DIGIT_REGEX = /\d/;
-  private readonly LOWERCASE_REGEX = /[a-z]/;
-  private readonly UPPERCASE_REGEX = /[A-Z]/;
-  private readonly SPECIAL_CHARACTER_REGEX = /[!@#$%^&*()+-]/;
-  private readonly WHITESPACE_REGEX = /\s/;
+  private readonly MIN_LENGTH: number = 8;
+  private readonly DIGIT_REGEX: RegExp = /\d/;
+  private readonly LOWERCASE_REGEX: RegExp = /[a-z]/;
+  private readonly UPPERCASE_REGEX: RegExp = /[A-Z]/;
+  private readonly SPECIAL_CHARACTER_REGEX: RegExp = /[!@#$%^&*()+-]/;
+  private readonly WHITESPACE_REGEX: RegExp = /\s/;
 
   public isValidPassword(password: string): boolean {
     if (password.length < this.MIN_LENGTH) {
