@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "API that receives a password (string) as a parameter and validates if it is a valid password by returning a boolean",
   "main": "/src/index.ts",
-  "type": "module",
   "scripts": {
     "init": "ts-node-dev --respawn --ignore-watch node_modules src/index.ts",
     "test": "jest",
