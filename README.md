@@ -1,6 +1,6 @@
 # Valid Password API
 
-English | [Português](README-ptBR.md)
+English | [Português](./README_ptbr.md)
 
 API that receives a password (string) as a parameter and validates if it is a valid password by returning a boolean.
 
