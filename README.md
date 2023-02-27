@@ -1,6 +1,6 @@
 # Valid Password API
 
-API that receives a password (string) as a parameter and validates if it is a valid password by returning a boolean
+API that receives a password (string) as a parameter and validates if it is a valid password by returning a boolean.
 
 # Table of Contents
 
@@ -62,7 +62,7 @@ This API only uses the POST request method.
 | `200` | `OK`          | The request was successful                        |
 | `400` | `Bad Request` | The request could not be understood due to syntax |
 
-# Constraints to validate password:
+# Constraints to validate password
 
 To be valid, the password must have:
 
@@ -91,7 +91,7 @@ To send a request to the API, you can use:
 - The command line, using [cURL](https://curl.se/)
 - [Postman](https://www.postman.com/)
 
-Curl example - Windows 10:
+cURL example - Windows 10:
 
 ```bash
 curl -X POST http://localhost:3000/validate-password ^
